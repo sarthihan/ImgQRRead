@@ -1,0 +1,67 @@
+
+
+.qrcode-reader {
+  position: relative;
+  min-height:128px;
+  width:auto;
+  height:auto !important;
+  background-color: white;
+  border: 1px solid rgba(162, 162, 162, 1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 8px;
+}
+.dark .qrcode-reader {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(46, 46, 46);
+}
+
+.qrcode-reader .qrcodeinput {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  opacity:0;
+  border:1px solid red;
+}
+.qrcode-reader .qrcodeinput {
+  cursor: pointer;
+}
+
+.qrcode-reader .qrcodepreview {
+  position: relative;
+  height: 128px;
+  width: auto;
+  display: block;
+}
+
+.qrcode-reader .qrcodebtn {
+  position: absolute;
+  top:130px;
+  left:0;
+  width:128px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 13px;
+}
+
+.qrcode-reader .qrcoderesult {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: wrap;
+  text-align: center;
+  font-size: 10px;
+  height: auto;
+  margin: 0px;
+}
